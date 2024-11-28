@@ -1,3 +1,19 @@
+spring:
+  application:
+    name: TestBot
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    user-name: "postgres"
+    password: "Max.2005"
+    url: "jdbc:postgresql://localhost:5432/TestBot"
+    hikari:
+      jdbc-url: "${spring.datasource.url}"
+  data:
+    jdbc:
+      dialect: postgresql
+  jpa:
+    hibernate:
+      ddl-auto: update
 bot:
   nickName: "TestJava19_bot"
   token: "7661430444:AAHim96fqMl-OuXAtPPD8WXtTEvZk7dXbkU"
